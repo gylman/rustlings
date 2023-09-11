@@ -2,9 +2,35 @@
 //
 // Execute `rustlings hint if1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+/*
+
+Did you know that:
+
+fn bigger(a: i32, b: i32) -> i32 {
+    if a >= b {
+      a
+    }
+    b
+}
+
+Gives error, but this:
+
+fn bigger(a: i32, b: i32) -> i32 {
+    if a >= b {
+      return a
+    }
+    b
+}
+
+Does not. Because when rust sees the return keyword it exits immediately
+
+*/
 
 pub fn bigger(a: i32, b: i32) -> i32 {
+    if a >= b {
+        return a;
+    }
+    b
     // Complete this function to return the bigger number!
     // Do not use:
     // - another function call
