@@ -2,6 +2,10 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
+/*
+The error in your code is because the type of identifier is not consistent. In Rust, variables must have a single, consistent type throughout their scope.
+*/
+
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
         1
